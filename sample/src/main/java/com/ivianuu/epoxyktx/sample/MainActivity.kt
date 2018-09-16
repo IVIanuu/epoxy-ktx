@@ -16,8 +16,6 @@ class MainActivity : AppCompatActivity() {
 
         val recyclerView = RecyclerView(this)
 
-        val epoxyController = recyclerView.setEpoxyControllerAndBuild {
-
-        }
+        val epoxyController = recyclerView.setEpoxyControllerAndBuild {}
     }
 }
