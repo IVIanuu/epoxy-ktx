@@ -4,7 +4,6 @@ import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import androidx.recyclerview.widget.RecyclerView
 import com.airbnb.epoxy.EpoxyRecyclerView
-import com.ivianuu.epoxyktx.setEpoxyControllerAndBuild
 
 class MainActivity : AppCompatActivity() {
 
@@ -15,7 +14,5 @@ class MainActivity : AppCompatActivity() {
         EpoxyRecyclerView(this)
 
         val recyclerView = RecyclerView(this)
-
-        val epoxyController = recyclerView.setEpoxyControllerAndBuild {}
     }
 }

@@ -17,7 +17,6 @@
 package com.ivianuu.epoxyktx
 
 import androidx.recyclerview.widget.RecyclerView
-import com.airbnb.epoxy.EpoxyAdapter
 import com.airbnb.epoxy.EpoxyController
 import com.airbnb.epoxy.Typed2EpoxyController
 import com.airbnb.epoxy.Typed3EpoxyController
@@ -34,44 +33,44 @@ fun RecyclerView.setEpoxyControllerAndBuild(epoxyController: EpoxyController) {
 }
 
 fun RecyclerView.setEpoxyController(
-    asyncBuilding: Boolean = EpoxyPlugins.useAsyncBuilding,
-    asyncDiffing: Boolean = EpoxyPlugins.useAsyncDiffing,
+    asyncBuilding: Boolean = EpoxyKtxPlugins.useAsyncBuilding,
+    asyncDiffing: Boolean = EpoxyKtxPlugins.useAsyncDiffing,
     buildModels: EpoxyController.() -> Unit
 ) = setEpoxyControllerInternal(epoxyController(asyncBuilding, asyncDiffing, buildModels))
 
 fun RecyclerView.setEpoxyControllerAndBuild(
-    asyncBuilding: Boolean = EpoxyPlugins.useAsyncBuilding,
-    asyncDiffing: Boolean = EpoxyPlugins.useAsyncDiffing,
+    asyncBuilding: Boolean = EpoxyKtxPlugins.useAsyncBuilding,
+    asyncDiffing: Boolean = EpoxyKtxPlugins.useAsyncDiffing,
     buildModels: EpoxyController.() -> Unit
 ) = setEpoxyControllerAndBuildInternal(epoxyController(asyncBuilding, asyncDiffing, buildModels))
 
 fun <T> RecyclerView.setTypedEpoxyController(
-    asyncBuilding: Boolean = EpoxyPlugins.useAsyncBuilding,
-    asyncDiffing: Boolean = EpoxyPlugins.useAsyncDiffing,
+    asyncBuilding: Boolean = EpoxyKtxPlugins.useAsyncBuilding,
+    asyncDiffing: Boolean = EpoxyKtxPlugins.useAsyncDiffing,
     buildModels: TypedEpoxyController<T>.(data: T) -> Unit
 ) = setEpoxyControllerInternal(typedEpoxyController(asyncBuilding, asyncDiffing, buildModels))
 
 fun <T, U> RecyclerView.setTyped2EpoxyController(
-    asyncBuilding: Boolean = EpoxyPlugins.useAsyncBuilding,
-    asyncDiffing: Boolean = EpoxyPlugins.useAsyncDiffing,
+    asyncBuilding: Boolean = EpoxyKtxPlugins.useAsyncBuilding,
+    asyncDiffing: Boolean = EpoxyKtxPlugins.useAsyncDiffing,
     buildModels: Typed2EpoxyController<T, U>.(data1: T, data2: U) -> Unit
 ) = setEpoxyControllerInternal(typed2EpoxyController(asyncBuilding, asyncDiffing, buildModels))
 
 fun <T, U, V> RecyclerView.setTyped3EpoxyController(
-    asyncBuilding: Boolean = EpoxyPlugins.useAsyncBuilding,
-    asyncDiffing: Boolean = EpoxyPlugins.useAsyncDiffing,
+    asyncBuilding: Boolean = EpoxyKtxPlugins.useAsyncBuilding,
+    asyncDiffing: Boolean = EpoxyKtxPlugins.useAsyncDiffing,
     buildModels: Typed3EpoxyController<T, U, V>.(data1: T, data2: U, data3: V) -> Unit
 ) = setEpoxyControllerInternal(typed3EpoxyController(asyncBuilding, asyncDiffing, buildModels))
 
 fun <T, U, V, W> RecyclerView.setTyped4EpoxyController(
-    asyncBuilding: Boolean = EpoxyPlugins.useAsyncBuilding,
-    asyncDiffing: Boolean = EpoxyPlugins.useAsyncDiffing,
+    asyncBuilding: Boolean = EpoxyKtxPlugins.useAsyncBuilding,
+    asyncDiffing: Boolean = EpoxyKtxPlugins.useAsyncDiffing,
     buildModels: Typed4EpoxyController<T, U, V, W>.(data1: T, data2: U, data3: V, data4: W) -> Unit
 ) = setEpoxyControllerInternal(typed4EpoxyController(asyncBuilding, asyncDiffing, buildModels))
 
 fun <T> RecyclerView.setCollectionEpoxyController(
-    asyncBuilding: Boolean = EpoxyPlugins.useAsyncBuilding,
-    asyncDiffing: Boolean = EpoxyPlugins.useAsyncDiffing,
+    asyncBuilding: Boolean = EpoxyKtxPlugins.useAsyncBuilding,
+    asyncDiffing: Boolean = EpoxyKtxPlugins.useAsyncDiffing,
     buildModel: EpoxyController.(item: T) -> Unit
 ) = setEpoxyControllerInternal(collectionEpoxyController(asyncBuilding, asyncDiffing, buildModel))
 
