@@ -63,4 +63,5 @@ class EpoxyProperty<T>(default: () -> T) : ReadWriteProperty<EpoxyController, T>
     }
 }
 
-fun <T> epoxyProperty(default: () -> T) = EpoxyProperty(default)
+fun <T> epoxyProperty(default: () -> T): ReadWriteProperty<EpoxyController, T> =
+    EpoxyProperty(default)
