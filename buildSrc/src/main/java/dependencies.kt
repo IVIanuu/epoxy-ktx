@@ -2,7 +2,7 @@
 
 object Build {
     const val applicationId = "com.ivianuu.epoxyktx.sample"
-    const val buildToolsVersion = "28.0.2"
+    const val buildToolsVersion = "28.0.3"
 
     const val compileSdk = 28
     const val minSdk = 21
@@ -12,10 +12,10 @@ object Build {
 }
 
 object Versions {
-    const val androidGradlePlugin = "3.2.0"
+    const val androidGradlePlugin = "3.2.1"
     const val androidx = "1.0.0"
-    const val epoxy = "2.18.0"
-    const val kotlin = "1.3.0-rc-57"
+    const val epoxy = "2.19.0"
+    const val kotlin = "1.3.0"
     const val mavenGradle = "2.1"
 }
 
