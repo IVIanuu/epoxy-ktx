@@ -14,8 +14,8 @@ object Build {
 object Versions {
     const val androidGradlePlugin = "3.2.1"
     const val androidx = "1.0.0"
-    const val epoxy = "2.19.0"
-    const val kotlin = "1.3.0"
+    const val epoxy = "3.0.0"
+    const val kotlin = "1.3.11"
     const val mavenGradle = "2.1"
 }
 
