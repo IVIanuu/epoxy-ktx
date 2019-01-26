@@ -15,7 +15,6 @@ object Publishing {
     const val groupId = "com.ivianuu.epoxyktx"
     const val version = "git"
     const val vcsUrl = "https://github.com/IVIanuu/epoxy-ktx"
-    const val desc = "Kotlin extensions for the epoxy library"
 }
 
 object Versions {
