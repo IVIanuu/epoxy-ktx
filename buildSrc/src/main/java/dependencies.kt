@@ -13,6 +13,16 @@ object Build {
 
 object Publishing {
     const val groupId = "com.ivianuu.epoxyktx"
+    const val vcsUrl = "https://github.com/IVIanuu/epoxy-ktx"
+    const val desc = "Kotlin extensions for the epoxy library"
+
+    const val repo = "maven"
+    const val userOrg = "ivianuu"
+    @JvmField val licences = arrayOf("Apache-2.0")
+    const val websiteUrl = vcsUrl
+    const val issueTrackerUrl = "$vcsUrl/issues"
+    @JvmField val githubRepo = vcsUrl.replace("https://github.com/", "")
+    const val version = "git"
 }
 
 object Versions {
