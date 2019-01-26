@@ -13,8 +13,8 @@ object Build {
 
 object Publishing {
     const val groupId = "com.ivianuu.epoxyktx"
-    const val version = "git"
     const val vcsUrl = "https://github.com/IVIanuu/epoxy-ktx"
+    const val version = "git"
 }
 
 object Versions {
