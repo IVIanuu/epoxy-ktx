@@ -19,14 +19,22 @@ package com.ivianuu.epoxyktx
 /**
  * Global config
  */
-object EpoxyKtxPlugins {
-    /**
-     * Whether or not the epoxy controllers should be build async
-     */
-    var useAsyncBuilding = true
+object EpoxyKtxPlugins
 
-    /**
-     * Whether or not the epoxy controllers should be diffed async
-     */
-    var useAsyncDiffing = true
-}
+private var _useAsyncBuilding = true
+
+/**
+ * Whether or not the epoxy controllers should be build async
+ */
+var EpoxyKtxPlugins.useAsyncBuilding: Boolean
+    get() = _useAsyncBuilding
+    set(value) { _useAsyncBuilding = value }
+
+private var _useAsyncDiffing = true
+
+/**
+ * Whether or not the epoxy controllers should be diffed async
+ */
+var EpoxyKtxPlugins.useAsyncDiffing: Boolean
+    get() = _useAsyncDiffing
+    set(value) { _useAsyncDiffing = value }
